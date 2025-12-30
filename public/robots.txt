@@ -1,0 +1,30 @@
+# robots.txt para RecompraAI
+# Permite indexação completa do site
+
+user-agent: *
+allow: /
+disallow: /api/
+disallow: /admin/
+
+# Googlebot
+user-agent: Googlebot
+allow: /
+disallow: /api/
+disallow: /admin/
+
+# Bingbot
+user-agent: Bingbot
+allow: /
+disallow: /api/
+disallow: /admin/
+
+# ChatGPT (OpenAI)
+user-agent: GPTBot
+allow: /
+
+# Google AI (Bard/Gemini)
+user-agent: Google-Extended
+allow: /
+
+# Sitemap
+sitemap: https://recompraai.com.br/sitemap.xml

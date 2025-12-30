@@ -1,0 +1,40 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="heroGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#6841FA" />
+			<stop offset="60%" stop-color="#7158F7" />
+			<stop offset="100%" stop-color="#8F7BFF" />
+		</linearGradient>
+		<radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 280) rotate(90) scale(420 520)">
+			<stop offset="0%" stop-color="#f5f5ff" stop-opacity="0.35" />
+			<stop offset="100%" stop-color="#f5f5ff" stop-opacity="0" />
+		</radialGradient>
+	</defs>
+
+	<rect width="1440" height="960" fill="url(#heroGradient)" />
+	<rect width="1440" height="960" fill="url(#glow)" />
+
+	<g opacity="0.18" fill="#f5f5ff">
+		<circle cx="220" cy="200" r="18" />
+		<circle cx="360" cy="120" r="9" />
+		<circle cx="1080" cy="180" r="12" />
+		<circle cx="940" cy="70" r="7" />
+		<circle cx="1240" cy="260" r="16" />
+		<circle cx="540" cy="340" r="10" />
+		<circle cx="820" cy="280" r="14" />
+	</g>
+
+	<g stroke="#f5f5ff" stroke-opacity="0.35" stroke-width="1.8">
+		<path d="M190 160c18-18 48-18 66 0 18 18 48 18 66 0" stroke-linecap="round" />
+		<path d="M1150 120c16-14 40-14 56 0 16 14 40 14 56 0" stroke-linecap="round" />
+		<path d="M740 220c14-12 34-12 48 0 14 12 34 12 48 0" stroke-linecap="round" />
+	</g>
+
+	<g fill="#f5f5ff" fill-opacity="0.45">
+		<rect x="170" y="360" width="34" height="34" rx="6" />
+		<rect x="600" y="180" width="28" height="28" rx="5" />
+		<rect x="980" y="320" width="36" height="36" rx="7" />
+		<rect x="1240" y="140" width="26" height="26" rx="5" />
+	</g>
+
+</svg>
