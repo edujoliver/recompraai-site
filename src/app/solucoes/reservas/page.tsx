@@ -450,48 +450,28 @@ export default function ReservasPage() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="group relative overflow-hidden rounded-2xl border border-[#6841FA]/20 bg-gradient-to-br from-purple-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#6841FA]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-[#6841FA] to-[#9b7dff] p-3 shadow-md">
-                  <BarChart3 className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="mb-2 font-bold text-[#2C216F]">Estatísticas Detalhadas</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">Taxa de ocupação, no-shows e horários de pico</p>
-              </div>
+            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
+              <BarChart3 className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
+              <h3 className="mb-2 font-bold text-[#2C216F]">Estatísticas Detalhadas</h3>
+              <p className="text-sm text-[#5C5C73]">Taxa de ocupação, no-shows e horários de pico</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 p-3 shadow-md">
-                  <TrendingUp className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="mb-2 font-bold text-[#2C216F]">Performance por Mesa</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">Mesas mais solicitadas e ticket médio</p>
-              </div>
+            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
+              <TrendingUp className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
+              <h3 className="mb-2 font-bold text-[#2C216F]">Performance por Mesa</h3>
+              <p className="text-sm text-[#5C5C73]">Mesas mais solicitadas e ticket médio</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 p-3 shadow-md">
-                  <Brain className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="mb-2 font-bold text-[#2C216F]">Previsão de Demanda</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">IA prevê demanda para próximos dias</p>
-              </div>
+            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
+              <Brain className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
+              <h3 className="mb-2 font-bold text-[#2C216F]">Previsão de Demanda</h3>
+              <p className="text-sm text-[#5C5C73]">IA prevê demanda para próximos dias</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl border border-amber-500/20 bg-gradient-to-br from-amber-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 p-3 shadow-md">
-                  <Shield className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="mb-2 font-bold text-[#2C216F]">Gestão de No-Show</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">Marcação automática e políticas personalizadas</p>
-              </div>
+            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
+              <Shield className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
+              <h3 className="mb-2 font-bold text-[#2C216F]">Gestão de No-Show</h3>
+              <p className="text-sm text-[#5C5C73]">Marcação automática e políticas personalizadas</p>
             </div>
           </div>
         </div>
@@ -520,48 +500,28 @@ export default function ReservasPage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div className="group relative overflow-hidden rounded-2xl border border-[#6841FA]/20 bg-gradient-to-br from-purple-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#6841FA]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative flex flex-col items-center">
-                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-[#6841FA] to-[#9b7dff] p-3 shadow-md">
-                  <Zap className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="font-bold text-[#2C216F] mb-2">Real-time</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">Atualizações instantâneas sem refresh</p>
-              </div>
+            <div className="flex flex-col items-center text-center p-6">
+              <Zap className="h-10 w-10 text-[#6841FA] mb-3" />
+              <h3 className="font-bold text-[#2C216F] mb-2">Real-time</h3>
+              <p className="text-sm text-[#5C5C73]">Atualizações instantâneas sem refresh</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative flex flex-col items-center">
-                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 p-3 shadow-md">
-                  <Shield className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="font-bold text-[#2C216F] mb-2">Seguro</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">Criptografia e Row Level Security</p>
-              </div>
+            <div className="flex flex-col items-center text-center p-6">
+              <Shield className="h-10 w-10 text-[#6841FA] mb-3" />
+              <h3 className="font-bold text-[#2C216F] mb-2">Seguro</h3>
+              <p className="text-sm text-[#5C5C73]">Criptografia e Row Level Security</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative flex flex-col items-center">
-                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 p-3 shadow-md">
-                  <Smartphone className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="font-bold text-[#2C216F] mb-2">Responsivo</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">Mobile, tablet e desktop</p>
-              </div>
+            <div className="flex flex-col items-center text-center p-6">
+              <Smartphone className="h-10 w-10 text-[#6841FA] mb-3" />
+              <h3 className="font-bold text-[#2C216F] mb-2">Responsivo</h3>
+              <p className="text-sm text-[#5C5C73]">Mobile, tablet e desktop</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl border border-rose-500/20 bg-gradient-to-br from-rose-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative flex flex-col items-center">
-                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-rose-500 to-pink-500 p-3 shadow-md">
-                  <Server className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="font-bold text-[#2C216F] mb-2">Offline-First</h3>
-                <p className="text-sm text-[#5C5C73] leading-relaxed">Funciona com internet instável</p>
-              </div>
+            <div className="flex flex-col items-center text-center p-6">
+              <Server className="h-10 w-10 text-[#6841FA] mb-3" />
+              <h3 className="font-bold text-[#2C216F] mb-2">Offline-First</h3>
+              <p className="text-sm text-[#5C5C73]">Funciona com internet instável</p>
             </div>
           </div>
         </div>
