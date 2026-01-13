@@ -9,10 +9,11 @@ import { Check, MessageSquare, Bell, Settings, Users, Clock, Brain, Zap, BarChar
 export const metadata: Metadata = {
   title: "Sistema de Reservas Inteligente com IA | RecompraAI",
   description:
-    "Bot WhatsApp com IA conversacional, gestão de múltiplos salões, mesas inteligentes, grade horária flexível, analytics em tempo real e APIs prontas para automação.",
+    "IA conversacional para WhatsApp, gestão de múltiplos salões, mesas inteligentes, grade horária flexível, analytics em tempo real e APIs prontas para automação.",
   keywords: [
     "sistema de reservas restaurante",
-    "bot whatsapp reservas",
+    "ia whatsapp reservas",
+    "assistente reservas restaurante",
     "IA conversacional reservas",
     "gestão de mesas inteligente",
     "reserva online automática",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sistema de Reservas Inteligente com IA | RecompraAI",
     description:
-      "Bot WhatsApp com IA conversacional, gestão completa de mesas e salões, analytics avançado e APIs verbosas para LLMs.",
+      "IA conversacional para WhatsApp, gestão completa de mesas e salões, analytics avançado e APIs verbosas para LLMs.",
     type: "website",
     url: "https://recompraai.com.br/solucoes/reservas",
     images: [
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sistema de Reservas Inteligente com IA | RecompraAI",
     description:
-      "Bot WhatsApp com IA conversacional, gestão completa de mesas e salões, analytics avançado e APIs verbosas para LLMs.",
+      "IA conversacional para WhatsApp, gestão completa de mesas e salões, analytics avançado e APIs verbosas para LLMs.",
     images: ["/logos/recompraai.svg"],
   },
   alternates: {
@@ -78,8 +79,8 @@ export default function ReservasPage() {
       priceCurrency: "BRL",
     },
     featureList: [
-      "Bot WhatsApp 100% Autônomo",
-      "IA Conversacional Inteligente",
+      "IA WhatsApp 100% Autônoma",
+      "Assistente Conversacional Inteligente",
       "APIs Verbosas para LLMs",
       "Gestão de Múltiplos Salões",
       "Mesas Inteligentes",
@@ -118,7 +119,7 @@ export default function ReservasPage() {
                 Sistema de Reservas <span className="text-[#6841FA]">Inteligente</span>
               </>
             }
-            description="Bot WhatsApp com IA conversacional, gestão de múltiplos salões, mesas inteligentes, grade horária flexível, analytics em tempo real e APIs prontas para automação."
+            description="IA conversacional para WhatsApp, Widget, Instagram e todos os canais. Gestão de múltiplos salões, mesas inteligentes, grade horária flexível e analytics em tempo real."
             buttons={{
               primary: {
                 text: "Começar Grátis por 14 Dias",
@@ -202,7 +203,7 @@ export default function ReservasPage() {
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
                         <Check className="h-3 w-3 text-white" />
                       </div>
-                      <span>Bot com IA que entende "mesa perto da janela" ou "6 pessoas com crianças"</span>
+                      <span>Assistente de IA que entende "mesa perto da janela" ou "6 pessoas com crianças"</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
@@ -262,7 +263,7 @@ export default function ReservasPage() {
                 com IA
               </h2>
               <p className="mt-4 max-w-3xl font-sans text-base font-medium text-[#5C5C73] sm:text-lg">
-                Bot conversacional que entende contexto, responde perguntas complexas e gerencia reservas 24/7 sem intervenção humana.
+                Assistente de IA que entende contexto, responde perguntas complexas e gerencia reservas 24/7 sem intervenção humana.
               </p>
             </div>
 
@@ -301,7 +302,7 @@ export default function ReservasPage() {
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
                         <Check className="h-3 w-3 text-white" />
                       </div>
-                      <span>Bot inteligente que conversa naturalmente e entende contexto completo</span>
+                      <span>Assistente inteligente que conversa naturalmente e entende contexto completo</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">

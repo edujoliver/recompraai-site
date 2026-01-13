@@ -62,24 +62,30 @@ import {
 const solutions = [
   {
     id: "solution-1",
+    title: "Sistema de Reservas Inteligente",
+    description: "IA conversacional para WhatsApp, Widget e Instagram. Gerencie mesas, salões e turnos automaticamente.",
+    href: "/solucoes/reservas",
+  },
+  {
+    id: "solution-2",
     title: "CRM Premium",
     description: "Centralize os dados dos seus clientes e entenda quem são seus VIPs, inativos e recorrentes.",
     href: "/solucoes/crm",
   },
   {
-    id: "solution-2",
+    id: "solution-3",
     title: "Campanhas Inteligentes",
     description: "Automatize mensagens no WhatsApp e traga clientes de volta sem esforço.",
     href: "/solucoes/campanhas",
   },
   {
-    id: "solution-3",
+    id: "solution-4",
     title: "Fidelização e Cashback",
     description: "Recompense quem mais consome e aumente a recorrência.",
     href: "/solucoes/fidelizacao-cashback",
   },
   {
-    id: "solution-4",
+    id: "solution-5",
     title: "Oráculo (IA de Insights)",
     description: "O assistente de IA do seu restaurante. Faça perguntas em linguagem natural e receba análises inteligentes com base em seus dados reais.",
     href: "/solucoes/oraculo",
