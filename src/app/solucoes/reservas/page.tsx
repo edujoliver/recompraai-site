@@ -154,10 +154,10 @@ export default function ReservasPage() {
               <h2 className="font-sans text-pretty text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
                 <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                   Reserva Simples e Rápida
-                </span> via WhatsApp
+                </span> em Todos os Canais
               </h2>
               <p className="mt-4 max-w-3xl font-sans text-base font-medium text-[#5C5C73] sm:text-lg">
-                IA conversacional que entende linguagem natural. Cliente escolhe mesa, horário e recebe confirmação automática.
+                Widget web, WhatsApp, Instagram e todos os seus canais de comunicação. IA conversacional que entende linguagem natural e gerencia tudo automaticamente.
               </p>
             </div>
 
@@ -189,9 +189,15 @@ export default function ReservasPage() {
                     className="mb-3 font-sans text-2xl font-semibold text-[#2C216F] md:mb-4 md:text-4xl md:leading-tight lg:mb-6"
                     style={{ background: "linear-gradient(to right, #2C216F, #6841FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
                   >
-                    Conversação Natural via WhatsApp
+                    Widget Web, WhatsApp, Instagram e Mais
                   </h3>
                   <ul className="space-y-3 font-sans text-base font-medium leading-relaxed text-[#5C5C73] lg:text-lg">
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Widget embed para site, link direto e integração com todos os canais</span>
+                    </li>
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
                         <Check className="h-3 w-3 text-white" />
