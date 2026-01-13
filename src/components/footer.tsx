@@ -6,12 +6,11 @@ const linkGroups = [
     {
         group: 'Soluções',
         items: [
-            { title: 'Clientes & CRM 360°', href: '/solucoes/clientes-crm' },
-            { title: 'Marketing & Ofertas', href: '/solucoes/marketing-ofertas' },
-            { title: 'Reservas & Visitas', href: '/solucoes/reservas-visitas' },
-            { title: 'Cashback & Fidelização', href: '/solucoes/cashback-fidelizacao' },
-            { title: 'Oráculo de IA', href: '/solucoes/oraculo-ia' },
-            { title: 'Integrações & Automação', href: '/solucoes/integracoes-automacao' },
+            { title: 'Sistema de Reservas Inteligente', href: '/solucoes/reservas' },
+            { title: 'Clientes & CRM 360°', href: '/solucoes/crm' },
+            { title: 'Marketing & Ofertas', href: '/solucoes/campanhas' },
+            { title: 'Cashback & Fidelização', href: '/solucoes/fidelizacao-cashback' },
+            { title: 'Oráculo de IA', href: '/solucoes/oraculo' },
         ],
     },
     {
