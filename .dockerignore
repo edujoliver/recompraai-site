@@ -9,7 +9,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-package-lock.json
+
+# Manter package-lock.json para npm ci funcionar!
+# package-lock.json - NECESSÁRIO para builds
 yarn.lock
 pnpm-lock.yaml
 
