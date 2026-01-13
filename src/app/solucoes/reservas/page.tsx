@@ -144,100 +144,87 @@ export default function ReservasPage() {
       </div>
 
       {/* Seção: Para o Cliente */}
-      <section className="bg-white py-16 md:py-20">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#B7A6FF]">
-              Para o Cliente
-            </span>
-            <h2 className="text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
-              Reserva{" "}
-              <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                Simples e Rápida
+      <section className="py-16 bg-white">
+        <div className="mx-auto w-full max-w-[88rem] px-4 sm:px-6 lg:px-10">
+          <div className="flex flex-col space-y-10 md:space-y-16">
+            <div className="flex flex-col items-center text-center">
+              <span className="mb-3 font-mono text-sm font-semibold uppercase tracking-[0.3em] text-[#B7A6FF]">
+                Para o Cliente
               </span>
-            </h2>
-            <p className="mt-4 text-base text-[#5C5C73] md:text-lg">
-              Experiência intuitiva que permite reservas via WhatsApp, site ou app
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* Card 1 */}
-            <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
-              <div className="mb-4 inline-flex rounded-lg bg-[#6841FA]/10 p-3">
-                <MessageSquare className="h-6 w-6 text-[#6841FA]" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-[#2C216F]">
-                Reserva via WhatsApp
-              </h3>
-              <p className="text-[#5C5C73]">
-                Bot com IA que entende linguagem natural. Cliente conversa normalmente e sistema gerencia data, horário e preferências de mesa.
+              <h2 className="font-sans text-pretty text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
+                <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                  Reserva Simples e Rápida
+                </span> via WhatsApp
+              </h2>
+              <p className="mt-4 max-w-3xl font-sans text-base font-medium text-[#5C5C73] sm:text-lg">
+                IA conversacional que entende linguagem natural. Cliente escolhe mesa, horário e recebe confirmação automática.
               </p>
             </div>
 
-            {/* Card 2 */}
-            <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
-              <div className="mb-4 inline-flex rounded-lg bg-[#6841FA]/10 p-3">
-                <Check className="h-6 w-6 text-[#6841FA]" />
+            <div className="lg:flex lg:gap-x-4">
+              <div className="lg:w-1/2">
+                <div className="mb-6 md:mb-8 lg:mb-0">
+                  <div className="overflow-hidden rounded-md border border-border">
+                    <Image
+                      alt="Reserva via WhatsApp com IA conversacional"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                      className="aspect-4/3 w-full object-cover transition-transform duration-500 hover:scale-105 hover:brightness-110"
+                      src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+                    />
+                  </div>
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-[#2C216F]">
-                Confirmação Automática
-              </h3>
-              <p className="text-[#5C5C73]">
-                Confirmação instantânea via WhatsApp, SMS e e-mail com todos os detalhes da reserva.
-              </p>
-            </div>
 
-            {/* Card 3 */}
-            <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
-              <div className="mb-4 inline-flex rounded-lg bg-[#6841FA]/10 p-3">
-                <Bell className="h-6 w-6 text-[#6841FA]" />
+              <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 2xl:pl-32">
+                <div>
+                  <div className="mb-4 inline-flex items-center gap-3">
+                    <span className="font-mono text-5xl font-light text-[#6841FA] opacity-30">01</span>
+                    <span className="rounded-full bg-[#6841FA] px-4 py-1.5 font-mono text-xs font-medium uppercase tracking-wider text-white">
+                      EXPERIÊNCIA DO CLIENTE
+                    </span>
+                  </div>
+                  <h3
+                    className="mb-3 font-sans text-2xl font-semibold text-[#2C216F] md:mb-4 md:text-4xl md:leading-tight lg:mb-6"
+                    style={{ background: "linear-gradient(to right, #2C216F, #6841FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+                  >
+                    Conversação Natural via WhatsApp
+                  </h3>
+                  <ul className="space-y-3 font-sans text-base font-medium leading-relaxed text-[#5C5C73] lg:text-lg">
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Bot com IA que entende "mesa perto da janela" ou "6 pessoas com crianças"</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Confirmação automática via WhatsApp, SMS e e-mail instantaneamente</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Lembretes 24h antes com opção de confirmar ou remarcar</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Escolha de mesa: Vista Mar, VIP, Externa, Romântica, Kid-friendly</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Lista de espera digital com notificação quando mesa liberar</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-[#2C216F]">
-                Lembretes Inteligentes
-              </h3>
-              <p className="text-[#5C5C73]">
-                Notificações automáticas 24h antes com opção de confirmar ou remarcar.
-              </p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
-              <div className="mb-4 inline-flex rounded-lg bg-[#6841FA]/10 p-3">
-                <Settings className="h-6 w-6 text-[#6841FA]" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-[#2C216F]">
-                Escolha de Mesa
-              </h3>
-              <p className="text-[#5C5C73]">
-                Selecione mesa com vista, área externa, VIP, romântica ou kid-friendly.
-              </p>
-            </div>
-
-            {/* Card 5 */}
-            <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
-              <div className="mb-4 inline-flex rounded-lg bg-[#6841FA]/10 p-3">
-                <Users className="h-6 w-6 text-[#6841FA]" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-[#2C216F]">
-                Lista de Espera Digital
-              </h3>
-              <p className="text-[#5C5C73]">
-                Fila virtual com notificação automática quando mesa liberar.
-              </p>
-            </div>
-
-            {/* Card 6 */}
-            <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
-              <div className="mb-4 inline-flex rounded-lg bg-[#6841FA]/10 p-3">
-                <Clock className="h-6 w-6 text-[#6841FA]" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-[#2C216F]">
-                Histórico de Reservas
-              </h3>
-              <p className="text-[#5C5C73]">
-                Acesse todas as reservas anteriores e facilite remarcar favoritos.
-              </p>
             </div>
           </div>
         </div>
@@ -254,69 +241,83 @@ export default function ReservasPage() {
       </div>
 
       {/* Seção: IA WhatsApp */}
-      <section className="bg-white py-16 md:py-20">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Left Column - Content */}
-            <div>
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#6841FA]/10 px-4 py-2">
-                <Brain className="h-5 w-5 text-[#6841FA]" />
-                <span className="text-sm font-semibold text-[#6841FA]">
-                  IA Conversacional
-                </span>
-              </div>
-              
-              <h2 className="mb-4 text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
-                WhatsApp 100%{" "}
+      <section className="py-16 bg-white">
+        <div className="mx-auto w-full max-w-[88rem] px-4 sm:px-6 lg:px-10">
+          <div className="flex flex-col space-y-10 md:space-y-16">
+            <div className="flex flex-col items-center text-center">
+              <span className="mb-3 font-mono text-sm font-semibold uppercase tracking-[0.3em] text-[#B7A6FF]">
+                Inteligência Artificial
+              </span>
+              <h2 className="font-sans text-pretty text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
+                WhatsApp{" "}
                 <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                  Autônomo
-                </span>
+                  100% Autônomo
+                </span>{" "}
+                com IA
               </h2>
-              
-              <p className="mb-6 text-base text-[#5C5C73] md:text-lg">
-                IA que entende contexto e responde perguntas complexas. Gerencia reservas 24/7 sem intervenção humana.
+              <p className="mt-4 max-w-3xl font-sans text-base font-medium text-[#5C5C73] sm:text-lg">
+                Bot conversacional que entende contexto, responde perguntas complexas e gerencia reservas 24/7 sem intervenção humana.
               </p>
-
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Bot Inteligente</p>
-                    <p className="text-sm text-[#5C5C73]">IA que conversa naturalmente e entende "mesa perto da janela" ou "6 pessoas com crianças"</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">APIs Verbosas para LLMs</p>
-                    <p className="text-sm text-[#5C5C73]">Respostas explicativas perfeitas para GPT, Claude e agentes de IA</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Integração n8n, Make, Zapier</p>
-                    <p className="text-sm text-[#5C5C73]">Webhooks e APIs prontas para automação total</p>
-                  </div>
-                </li>
-              </ul>
             </div>
 
-            {/* Right Column - Image/Graphic */}
-            <div className="relative">
-              <Image 
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg" 
-                alt="IA Conversacional WhatsApp" 
-                width={600} 
-                height={400} 
-                className="w-full rounded-lg shadow-lg"
-              />
+            <div className="lg:flex lg:gap-x-4 lg:flex-row-reverse">
+              <div className="lg:w-1/2">
+                <div className="mb-6 md:mb-8 lg:mb-0">
+                  <div className="overflow-hidden rounded-md border border-border">
+                    <Image
+                      alt="IA Conversacional WhatsApp Bot"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                      className="aspect-4/3 w-full object-cover transition-transform duration-500 hover:scale-105 hover:brightness-110"
+                      src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:flex lg:w-1/2 lg:items-center lg:pr-24 2xl:pr-32">
+                <div>
+                  <div className="mb-4 inline-flex items-center gap-3">
+                    <span className="font-mono text-5xl font-light text-[#6841FA] opacity-30">02</span>
+                    <span className="rounded-full bg-[#6841FA] px-4 py-1.5 font-mono text-xs font-medium uppercase tracking-wider text-white">
+                      AUTOMAÇÃO TOTAL
+                    </span>
+                  </div>
+                  <h3
+                    className="mb-3 font-sans text-2xl font-semibold text-[#2C216F] md:mb-4 md:text-4xl md:leading-tight lg:mb-6"
+                    style={{ background: "linear-gradient(to right, #2C216F, #6841FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+                  >
+                    IA Conversacional e APIs Prontas
+                  </h3>
+                  <ul className="space-y-3 font-sans text-base font-medium leading-relaxed text-[#5C5C73] lg:text-lg">
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Bot inteligente que conversa naturalmente e entende contexto completo</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>APIs verbosas perfeitas para GPT, Claude e agentes de IA</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Integração nativa com n8n, Make, Zapier via webhooks</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Real-time com sincronização instantânea cross-device</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -333,93 +334,88 @@ export default function ReservasPage() {
       </div>
 
       {/* Seção: Para o Restaurante */}
-      <section className="bg-white py-16 md:py-20">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="mb-12 text-center">
-            <span className="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#B7A6FF]">
-              Para o Restaurante
-            </span>
-            <h2 className="text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
-              Gestão{" "}
-              <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                Completa
+      <section className="py-16 bg-white">
+        <div className="mx-auto w-full max-w-[88rem] px-4 sm:px-6 lg:px-10">
+          <div className="flex flex-col space-y-10 md:space-y-16">
+            <div className="flex flex-col items-center text-center">
+              <span className="mb-3 font-mono text-sm font-semibold uppercase tracking-[0.3em] text-[#B7A6FF]">
+                Para o Restaurante
               </span>
-            </h2>
-            <p className="mt-4 text-base text-[#5C5C73] md:text-lg">
-              Dashboard centralizado com visão 360° de todas as operações
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Left Column - Image */}
-            <div className="order-2 lg:order-1">
-              <Image 
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg" 
-                alt="Dashboard de Gestão" 
-                width={600} 
-                height={400} 
-                className="w-full rounded-lg shadow-lg"
-              />
+              <h2 className="font-sans text-pretty text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
+                <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                  Gestão Completa
+                </span>{" "}
+                em Tempo Real
+              </h2>
+              <p className="mt-4 max-w-3xl font-sans text-base font-medium text-[#5C5C73] sm:text-lg">
+                Dashboard centralizado com mesas inteligentes, múltiplos salões, grade horária configurável e analytics avançado.
+              </p>
             </div>
 
-            {/* Right Column - Features */}
-            <div className="order-1 lg:order-2">
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
+            <div className="lg:flex lg:gap-x-4">
+              <div className="lg:w-1/2">
+                <div className="mb-6 md:mb-8 lg:mb-0">
+                  <div className="overflow-hidden rounded-md border border-border">
+                    <Image
+                      alt="Dashboard de gestão completa de reservas"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                      className="aspect-4/3 w-full object-cover transition-transform duration-500 hover:scale-105 hover:brightness-110"
+                      src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+                    />
                   </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Painel de Controle Centralizado</p>
-                    <p className="text-sm text-[#5C5C73]">Visualize todas as reservas do dia em tempo real</p>
+                </div>
+              </div>
+
+              <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 2xl:pl-32">
+                <div>
+                  <div className="mb-4 inline-flex items-center gap-3">
+                    <span className="font-mono text-5xl font-light text-[#6841FA] opacity-30">03</span>
+                    <span className="rounded-full bg-[#6841FA] px-4 py-1.5 font-mono text-xs font-medium uppercase tracking-wider text-white">
+                      OPERAÇÃO COMPLETA
+                    </span>
                   </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Múltiplos Salões</p>
-                    <p className="text-sm text-[#5C5C73]">Gerencie área principal, VIP, externa e privativa separadamente</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Configuração de Mesas</p>
-                    <p className="text-sm text-[#5C5C73]">Defina capacidade, características e posicionamento</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Grade Horária Flexível</p>
-                    <p className="text-sm text-[#5C5C73]">Configure horários diferentes para cada dia (almoço, jantar, brunch)</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Bloqueios Administrativos</p>
-                    <p className="text-sm text-[#5C5C73]">Reserve mesas/salões para manutenção ou eventos privados</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
-                    <Check className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2C216F]">Check-in Digital</p>
-                    <p className="text-sm text-[#5C5C73]">Marque chegada do cliente e controle ocupação em tempo real</p>
-                  </div>
-                </li>
-              </ul>
+                  <h3
+                    className="mb-3 font-sans text-2xl font-semibold text-[#2C216F] md:mb-4 md:text-4xl md:leading-tight lg:mb-6"
+                    style={{ background: "linear-gradient(to right, #2C216F, #6841FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+                  >
+                    Mesas Inteligentes e Salões Configuráveis
+                  </h3>
+                  <ul className="space-y-3 font-sans text-base font-medium leading-relaxed text-[#5C5C73] lg:text-lg">
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Dashboard com KPIs: taxa de ocupação, no-shows e receita por turno</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Múltiplos salões: área principal, VIP, externa e privativa independentes</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Mesas inteligentes: Vista Mar, VIP, Externa, Romântica, A/C, Kid-friendly</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Grade horária: almoço, jantar, brunch com intervalos personalizados</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
+                      <span>Bloqueios administrativos para manutenção ou eventos privados</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -454,28 +450,48 @@ export default function ReservasPage() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
-              <BarChart3 className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
-              <h3 className="mb-2 font-bold text-[#2C216F]">Estatísticas Detalhadas</h3>
-              <p className="text-sm text-[#5C5C73]">Taxa de ocupação, no-shows e horários de pico</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-[#6841FA]/20 bg-gradient-to-br from-purple-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#6841FA]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative">
+                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-[#6841FA] to-[#9b7dff] p-3 shadow-md">
+                  <BarChart3 className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="mb-2 font-bold text-[#2C216F]">Estatísticas Detalhadas</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">Taxa de ocupação, no-shows e horários de pico</p>
+              </div>
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
-              <TrendingUp className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
-              <h3 className="mb-2 font-bold text-[#2C216F]">Performance por Mesa</h3>
-              <p className="text-sm text-[#5C5C73]">Mesas mais solicitadas e ticket médio</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative">
+                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 p-3 shadow-md">
+                  <TrendingUp className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="mb-2 font-bold text-[#2C216F]">Performance por Mesa</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">Mesas mais solicitadas e ticket médio</p>
+              </div>
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
-              <Brain className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
-              <h3 className="mb-2 font-bold text-[#2C216F]">Previsão de Demanda</h3>
-              <p className="text-sm text-[#5C5C73]">IA prevê demanda para próximos dias</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative">
+                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 p-3 shadow-md">
+                  <Brain className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="mb-2 font-bold text-[#2C216F]">Previsão de Demanda</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">IA prevê demanda para próximos dias</p>
+              </div>
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm">
-              <Shield className="mx-auto mb-4 h-10 w-10 text-[#6841FA]" />
-              <h3 className="mb-2 font-bold text-[#2C216F]">Gestão de No-Show</h3>
-              <p className="text-sm text-[#5C5C73]">Marcação automática e políticas personalizadas</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-amber-500/20 bg-gradient-to-br from-amber-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative">
+                <div className="mx-auto mb-4 inline-flex rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 p-3 shadow-md">
+                  <Shield className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="mb-2 font-bold text-[#2C216F]">Gestão de No-Show</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">Marcação automática e políticas personalizadas</p>
+              </div>
             </div>
           </div>
         </div>
@@ -504,28 +520,48 @@ export default function ReservasPage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div className="flex flex-col items-center text-center p-6">
-              <Zap className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Real-time</h3>
-              <p className="text-sm text-[#5C5C73]">Atualizações instantâneas sem refresh</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-[#6841FA]/20 bg-gradient-to-br from-purple-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#6841FA]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative flex flex-col items-center">
+                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-[#6841FA] to-[#9b7dff] p-3 shadow-md">
+                  <Zap className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="font-bold text-[#2C216F] mb-2">Real-time</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">Atualizações instantâneas sem refresh</p>
+              </div>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6">
-              <Shield className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Seguro</h3>
-              <p className="text-sm text-[#5C5C73]">Criptografia e Row Level Security</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative flex flex-col items-center">
+                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 p-3 shadow-md">
+                  <Shield className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="font-bold text-[#2C216F] mb-2">Seguro</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">Criptografia e Row Level Security</p>
+              </div>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6">
-              <Smartphone className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Responsivo</h3>
-              <p className="text-sm text-[#5C5C73]">Mobile, tablet e desktop</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative flex flex-col items-center">
+                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 p-3 shadow-md">
+                  <Smartphone className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="font-bold text-[#2C216F] mb-2">Responsivo</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">Mobile, tablet e desktop</p>
+              </div>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6">
-              <Server className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Offline-First</h3>
-              <p className="text-sm text-[#5C5C73]">Funciona com internet instável</p>
+            <div className="group relative overflow-hidden rounded-2xl border border-rose-500/20 bg-gradient-to-br from-rose-50 to-white p-6 text-center shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative flex flex-col items-center">
+                <div className="mb-3 inline-flex rounded-xl bg-gradient-to-br from-rose-500 to-pink-500 p-3 shadow-md">
+                  <Server className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="font-bold text-[#2C216F] mb-2">Offline-First</h3>
+                <p className="text-sm text-[#5C5C73] leading-relaxed">Funciona com internet instável</p>
+              </div>
             </div>
           </div>
         </div>
