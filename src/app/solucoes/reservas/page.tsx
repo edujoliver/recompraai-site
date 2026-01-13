@@ -483,56 +483,6 @@ export default function ReservasPage() {
         </div>
       </section>
 
-      {/* Diagonal lines separator */}
-      <div className="relative h-16 w-full overflow-hidden bg-white">
-        <div 
-          className="absolute inset-0 h-full w-full opacity-50"
-          style={{
-            background: 'repeating-linear-gradient(-45deg, #E4DFFF 0 1px, transparent 1px 16px)',
-          }}
-        />
-      </div>
-
-      {/* Seção: Recursos Técnicos */}
-      <section className="bg-white py-16 md:py-20">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
-              Tecnologia{" "}
-              <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                de Ponta
-              </span>
-            </h2>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div className="flex flex-col items-center text-center p-6">
-              <Zap className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Real-time</h3>
-              <p className="text-sm text-[#5C5C73]">Atualizações instantâneas sem refresh</p>
-            </div>
-
-            <div className="flex flex-col items-center text-center p-6">
-              <Shield className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Seguro</h3>
-              <p className="text-sm text-[#5C5C73]">Criptografia e Row Level Security</p>
-            </div>
-
-            <div className="flex flex-col items-center text-center p-6">
-              <Smartphone className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Responsivo</h3>
-              <p className="text-sm text-[#5C5C73]">Mobile, tablet e desktop</p>
-            </div>
-
-            <div className="flex flex-col items-center text-center p-6">
-              <Server className="h-10 w-10 text-[#6841FA] mb-3" />
-              <h3 className="font-bold text-[#2C216F] mb-2">Offline-First</h3>
-              <p className="text-sm text-[#5C5C73]">Funciona com internet instável</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Stats */}
       <Stats1 />
 
