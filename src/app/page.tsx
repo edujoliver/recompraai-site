@@ -9,20 +9,22 @@ import { Check } from "lucide-react";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "CRM para Restaurantes | Fidelização e Recompra Automática | RecompraAI",
-  description: "Cadastre clientes direto na nossa plataforma ou conecte seus sistemas via API. Automatize campanhas de recompra e aumente suas vendas diretas com seus próprios dados.",
+  title: "CRM para Restaurantes | Sistema de Reservas Inteligente | RecompraAI",
+  description: "CRM completo com sistema avançado de reservas: dashboard com KPIs, mesas inteligentes, grade horária, confirmação via WhatsApp e automação de recompra. Gestão completa para restaurantes.",
   keywords: [
     "CRM para restaurantes",
+    "sistema de reservas restaurante",
+    "gestão de mesas inteligente",
+    "dashboard analítico reservas",
+    "grade horária restaurante",
+    "confirmação automática whatsapp",
+    "mapa de calor ocupação",
     "fidelização restaurante",
     "recompra automática restaurante",
-    "automação whatsapp restaurante",
-    "cadastro clientes restaurante",
+    "mesas VIP vista mar",
+    "bloqueio eventos privados",
+    "controle de salões",
     "API integração restaurante",
-    "vendas diretas restaurante",
-    "dados clientes restaurante",
-    "cardápio digital",
-    "campanha whatsapp automática",
-    "gestão clientes delivery",
     "sistema fidelidade restaurante"
   ],
   authors: [{ name: "RecompraAI" }],
@@ -150,7 +152,7 @@ export default function Home() {
                 Sistema Inteligente para <span className="text-[#6841FA]">Restaurantes</span>
               </>
             }
-            description="Gerencie clientes e reservas, automatize recompra no WhatsApp e tenha IA analisando seus dados 24/7. Tudo em um só lugar: da agenda ao insight que faz você vender mais."
+            description="CRM completo com sistema avançado de reservas: dashboard com KPIs, mesas inteligentes, grade horária, confirmação via WhatsApp e automação de recompra. Gestão completa com mapa de calor e análise de tendências para vender mais."
             buttons={{
               primary: {
                 text: "Começar Grátis por 14 Dias",
@@ -277,32 +279,32 @@ export default function Home() {
                     <span className="rounded-full bg-[#6841FA] px-4 py-1.5 font-mono text-xs font-medium uppercase tracking-wider text-white">GESTÃO COMPLETA</span>
                   </div>
                   <h3 className="mb-3 font-sans text-2xl font-semibold text-[#2C216F] md:mb-4 md:text-4xl md:leading-tight lg:mb-6" style={{ background: "linear-gradient(to right, #2C216F, #6841FA)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                    Clientes e Reservas em Um Só Lugar
+                    Sistema Completo de Reservas e CRM
                   </h3>
                   <ul className="space-y-3 font-sans text-base font-medium leading-relaxed text-[#5C5C73] lg:text-lg">
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
                         <Check className="h-3 w-3 text-white" />
                       </div>
-                      <span>Calendário de reservas integrado com ficha do cliente</span>
+                      <span>Dashboard com KPIs: taxa de comparecimento, cancelamentos e receita por turno</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
                         <Check className="h-3 w-3 text-white" />
                       </div>
-                      <span>Análise automática: almoço vs jantar, dias de pico, preferências</span>
+                      <span>Mesas inteligentes: VIP, Vista Mar, Externa, Romântica com gestão de capacidade</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
                         <Check className="h-3 w-3 text-white" />
                       </div>
-                      <span>RFV automático: veja quem é VIP, quem sumiu, quem está em risco</span>
+                      <span>Grade horária configurável: almoço/jantar com intervalos personalizados</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">
                         <Check className="h-3 w-3 text-white" />
                       </div>
-                      <span>Histórico completo: quanto gastou, quando veio, o que pediu</span>
+                      <span>Mapa de calor de ocupação e gráficos de tendência mensal</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#6841FA]">

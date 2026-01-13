@@ -6,9 +6,9 @@ import { Stats1 } from "@/components/stats1";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "CRM Premium para Restaurantes | RecompraAI",
+  title: "CRM com Sistema de Reservas Inteligente | RecompraAI",
   description:
-    "Plataforma completa de CRM para restaurantes: ficha detalhada de clientes, gestão de reservas, dashboard em tempo real e alertas inteligentes de oportunidades.",
+    "CRM completo com sistema avançado de reservas: dashboard analítico com KPIs, mesas inteligentes, múltiplos salões, grade horária, confirmação via WhatsApp e mapa de calor de ocupação.",
   robots: {
     index: true,
     follow: true,
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "CRM Premium para Restaurantes | RecompraAI",
+    title: "CRM com Sistema de Reservas Inteligente | RecompraAI",
     description:
-      "Centralize dados dos clientes, gerencie reservas e aumente a recompra com o CRM mais inteligente para restaurantes.",
+      "Sistema de reservas avançado com dashboard analítico, mesas inteligentes, grade horária e confirmação automática via WhatsApp.",
     type: "website",
     url: "https://recompraai.com.br/solucoes/crm",
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CRM Premium para Restaurantes | RecompraAI",
+    title: "CRM com Sistema de Reservas Inteligente | RecompraAI",
     description:
-      "Centralize dados dos clientes, gerencie reservas e aumente a recompra com o CRM mais inteligente para restaurantes.",
+      "Sistema de reservas avançado com dashboard analítico, mesas inteligentes, grade horária e confirmação automática via WhatsApp.",
     images: ["/logos/recompraai.svg"],
   },
 };
@@ -51,19 +51,21 @@ export default function CRMPage() {
     name: "RecompraAI CRM Premium",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    description: "CRM completo para restaurantes com ficha detalhada de clientes, gestão de reservas, dashboard em tempo real e alertas inteligentes.",
+    description: "CRM completo com sistema avançado de reservas: dashboard com KPIs, mesas inteligentes, múltiplos salões, grade horária, confirmação via WhatsApp e mapa de calor.",
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "BRL",
     },
     featureList: [
-      "Ficha completa de clientes",
-      "Histórico de pedidos e visitas",
-      "Dashboard em tempo real",
-      "Gestão de reservas",
-      "Alertas de oportunidades",
-      "Segmentação inteligente",
+      "Dashboard analítico com KPIs",
+      "Múltiplos salões configuráveis",
+      "Mesas inteligentes (VIP, Vista Mar, Externa)",
+      "Grade horária por turnos",
+      "Confirmação automática via WhatsApp",
+      "Mapa de calor de ocupação",
+      "Gráficos de tendência mensal",
+      "Sistema de bloqueios para eventos",
     ],
   };
 
@@ -195,14 +197,12 @@ export default function CRMPage() {
                 Reservas e Visitas
               </span>
               <h2 className="text-pretty text-3xl font-bold text-[#2C216F] sm:text-4xl lg:text-5xl">
-                Gestão{" "}
-                <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Inteligente
+                Sistema Completo de{" "}
+                <span style={{ background: "linear-gradient(to right, #6841FA, #9b7dff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Reservas Inteligentes
                 </span>
-                {" "}de Mesas e Reservas
               </h2>
               <p className="mt-4 max-w-3xl text-base font-medium text-[#5C5C73] sm:text-lg">
-                Controle reservas, acompanhe no-shows, identifique clientes VIPs e ofereça experiências personalizadas 
-                desde o momento do agendamento até a saída do cliente.
+                Dashboard analítico com KPIs em tempo real, gestão de múltiplos salões, mesas inteligentes com características personalizadas (VIP, Vista Mar, Externa, Romântica), grade horária por turnos e confirmação automática via WhatsApp. Sistema completo com mapa de calor de ocupação e gráficos de tendência mensal.
               </p>
             </div>
             <div className="flex-row-reverse lg:flex lg:gap-x-4">
@@ -215,32 +215,40 @@ export default function CRMPage() {
               <div className="lg:flex lg:w-1/2 lg:items-center lg:pr-24 2xl:pr-32">
                 <div>
                   <h3 className="mb-3 text-2xl font-semibold text-[#2C216F] md:mb-4 md:text-4xl md:leading-tight lg:mb-6">
-                    Controle Total de Reservas
+                    Dashboard Analítico e Mesas Inteligentes
                   </h3>
                   <ul className="space-y-3 text-base font-medium leading-relaxed text-[#5C5C73] lg:text-lg">
                     <li className="flex items-start gap-2">
                       <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
-                      <span>Gestão visual de mesas e ocupação em tempo real</span>
+                      <span>Dashboard com KPIs: taxa de comparecimento, cancelamentos e receita em tempo real</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
-                      <span>Histórico completo de visitas por cliente</span>
+                      <span>Múltiplos salões configuráveis com capacidade personalizada e controle de antecedência</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
-                      <span>Identificação automática de clientes VIP e recorrentes</span>
+                      <span>Mesas inteligentes: VIP, Vista Mar, Externa, Romântica, Silenciosa, com ou sem A/C</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
-                      <span>Alertas de no-show e clientes faltosos</span>
+                      <span>Grade horária por turnos (almoço/jantar) com duração e intervalos configuráveis</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
-                      <span>Integração com WhatsApp para confirmações</span>
+                      <span>Sistema de bloqueios para eventos privados e ocasiões especiais</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
-                      <span>Lembretes automáticos de aniversário e datas especiais</span>
+                      <span>Mapa de calor de ocupação e gráficos de tendência mensal</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
+                      <span>Filtros avançados: confirmadas, pendentes, canceladas, em atendimento</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 shrink-0 text-[#6841FA] mt-0.5" />
+                      <span>Confirmação automática via WhatsApp integrada ao sistema</span>
                     </li>
                   </ul>
                 </div>
