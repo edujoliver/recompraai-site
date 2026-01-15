@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copiar package files
 COPY package*.json ./
-RUN npm ci --omit=dev --ignore-scripts
+RUN npm ci --ignore-scripts
 
 # 2. Build da aplicação
 FROM base AS builder
